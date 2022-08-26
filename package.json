@@ -1,0 +1,15 @@
+{
+  "name": "fungus-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "shadow-cljs watch app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "~2.10.13"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
