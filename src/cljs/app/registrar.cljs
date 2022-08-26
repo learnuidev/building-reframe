@@ -1,6 +1,6 @@
 (ns app.registrar)
 
-(def kind->id->handler  (atom {}))
+(defonce kind->id->handler  (atom {}))
 
 
 (comment
