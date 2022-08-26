@@ -3,4 +3,4 @@
 
 ;; -- Application State  --------------------------------------------------------------------------
 ;; Should not be accessed directly by application code.
-(def app-db (r/atom {}))
+(defonce app-db (r/atom {}))
