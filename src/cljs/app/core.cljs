@@ -1,7 +1,20 @@
 (ns app.core
-  "This namespace contains your application and is the entrypoint for 'yarn start'."
   (:require [reagent.core :as r]
+            [app.re-frame :as rf]
             [reagent.dom :as rdom]))
+
+;;
+(rf/reg-event-db
+ :init
+ (fn [db _]
+   {:counter 0}))
+
+;;
+(rf/reg-event-db
+ :increment
+ (fn [db _]
+   (update db :counter inc)))
+
 
 
 (defn app []
